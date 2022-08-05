@@ -9,3 +9,8 @@ git clone https://github.com/mdenizozkahraman/packet_listener-linux.git
 python3 packet_listener.py
 
 ## Contact
+E-mail: mehmetdenizozkahraman@outlook.com
+
+Linkedin: https://www.linkedin.com/in/mdenizozkahraman/
+
+Twitter: denizozkahraman
