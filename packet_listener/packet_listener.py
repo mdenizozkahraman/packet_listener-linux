@@ -1,5 +1,6 @@
 import scapy.all as scapy
-from scapy_http import http
+from scapy.layers import http
+
 
 def listen_packets(interface):
 
