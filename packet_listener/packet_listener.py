@@ -1,6 +1,6 @@
 import scapy.all as scapy
 from scapy.layers import http
-import time
+
 
 
 def listen_packets(interface):
@@ -28,19 +28,12 @@ number = 0
 a = "."
 
 try:
-    while True:
-
-        if number > 2:
-            number -= 1
-
-        if number <= 2:
-            number += 1
-
-        print("\rListening Packets " + str(number*a), end="")
-        time.sleep(1)
+        print("\rSniffing ... ")
+        print()
+        listen_packets("eth0")
 
 
 except KeyboardInterrupt:
     print("\n Sniffing terminated!")
 
-listen_packets("eth0")
+
