@@ -24,14 +24,23 @@ by mdo //-
 
 """)
 
-
+number = 0
+a = "."
 
 try:
     while True:
 
-        print("\rListening Packets ", end="...")
-        time.sleep(2)
+        if number > 2:
+            number -= 1
 
-        listen_packets("eth0")
+        if number <= 2:
+            number += 1
+
+        print("\rListening Packets " + str(number*a), end="")
+        time.sleep(1)
+
+
 except KeyboardInterrupt:
     print("\n Sniffing terminated!")
+
+listen_packets("eth0")
