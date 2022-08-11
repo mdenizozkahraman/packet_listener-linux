@@ -24,16 +24,12 @@ by mdo //-
 
 """)
 
-number = 0
-a = "."
 
-try:
-    print("\rSniffing ... ")
-    print()
-    listen_packets("eth0")
+print("\rSniffing ... ")
+print()
+listen_packets("eth0")
 
 
-except KeyboardInterrupt:
-    print("Sniffing terminated!")
+
 
 
