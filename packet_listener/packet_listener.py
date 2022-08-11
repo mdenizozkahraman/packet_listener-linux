@@ -24,13 +24,14 @@ by mdo //-
 
 """)
 
-listen_packets("eth0")
+
 
 try:
     while True:
 
         print("\rListening Packets ", end="...")
-
         time.sleep(2)
+
+        listen_packets("eth0")
 except KeyboardInterrupt:
     print("\n Sniffing terminated!")
