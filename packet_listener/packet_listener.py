@@ -34,6 +34,6 @@ try:
 
 
 except KeyboardInterrupt:
-    print("\n Sniffing terminated!")
+    print("Sniffing terminated!")
 
 
